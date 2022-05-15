@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EX 03</title>
+    <style>
+        .container {
+            font-family: sans-serif;
+            width: 60%;
+            margin: auto;
+            padding: 20px;
+            display: grid;
+            grid-template-columns: 500px 300px;
+            box-shadow: rgba(0, 0, 0, 0.2) 0px 2px 8px 0px;
+        }
+        .col {
+            margin: 10px;
+        }
+        label{
+            margin: 10px;
+        }
+        input{
+            padding: 10px;
+            width: 300px;
+            margin: 10px;
+        }
+        button{
+            width: 100px;
+            padding: 10px;
+            margin-left: 10px;
+        }
+        h1{
+            font-size: 100px;
+            margin: 0;
+            color: greenyellow;
+        }
+        .col:nth-child(2){
+            text-align: center;
+            margin-right: 200px;
+            margin-top: 70px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="col">
+            <h2>Calculator</h2>
+            <hr>
+            <label for="firs-num">First Number:</label> <br>
+            <input type="number" name="first-num" id="first-num"> <br>
+            <label for="second-num">Second Number:</label> <br>
+            <input type="number" name="second-num" id="second-num"><br>
+            <button id="sum">Sum ( &plus; )</button>
+            <button id="multiply">Multiply ( &times; )</button>
+        </div>
+        <div class="col">
+            <h3>Result</h3>
+            <h1>0</h1>
+        </div>
+    </div>
+    <script src="js/main.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EX 05</title>
+    <style>
+        body{
+            margin: 0;
+            padding: 0;
+        }
+        .container{
+            padding: 20px;
+            width: 70%;
+            display: grid;
+            grid-template-columns: 300px 500px;
+            margin: auto;
+            margin-top: 30px;
+            box-shadow: rgba(0, 0, 0, 0.2) 0px 2px 8px 0px;
+        }
+        img{
+            width: 250px;
+        }
+        p{
+            line-height: 35px;
+            margin: 0;
+            font-size: 13px;
+        }
+        header{
+            padding: 20px;
+            box-shadow: rgba(0, 0, 0, 0.2) 0px 2px 8px 0px;
+            text-align: right;
+        }
+        input{
+            margin-left: 20px;
+        }
+        #color{
+            width: 100px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <input type="range" name="range" id="range" max="40" min="10" value = "12">
+        <input type="color" name="color" id="color">
+        <input type="checkbox" name="mode" id="mode">
+        <label for="mode">Dart Mode</label>
+    </header>
+    <div class="container">
+        <div class="col">
+            <img src="image/mg.jpg" alt="">
+        </div>
+        <div class="col">
+            <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium, consequuntur dolores? Ad placeat omnis eum nemo illo ipsa porro, id accusantium pariatur alias? Necessitatibus tempore, delectus vitae suscipit deleniti repudiandae?
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam blanditiis, enim officiis in incidunt distinctio sit commodi doloribus! Deserunt, voluptatem placeat? Doloribus atque aut et quibusdam nihil. Officiis, fuga magnam.
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam blanditiis, enim officiis in incidunt distinctio sit commodi doloribus! Deserunt, voluptatem placeat? Doloribus atque aut et quibusdam nihil. Officiis, fuga magnam.
+            </p>
+        </div>
+    </div>
+    <script src="js/main.js"></script>
+</body>
+</html>
